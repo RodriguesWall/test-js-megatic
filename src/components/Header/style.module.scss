@@ -1,0 +1,42 @@
+@import '../../global/variables.scss';
+
+.header {
+    background-color: $background-color;
+    color: $primary-color;
+    padding: 5px;
+    min-height: 7vh;
+  
+    .sidebarHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+     
+  
+      .siteTitle {
+        margin-left: 14px;
+        font-size: 1.2rem;
+        color: $primary-color;
+        min-width: 200px;
+      }
+    }
+  
+    .toolbar {
+      display: flex;
+      align-items: center;
+    }
+  
+    .icon {
+      color: $primary-color;
+      font-size: 24px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .menuIcon {
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: 5px;
+      }
+  }
+  
