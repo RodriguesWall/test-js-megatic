@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { BiSearch, BiBell, BiUser } from 'react-icons/bi'; // Importando os ícones
-import { Toolbar, Item } from 'devextreme-react/toolbar'; // Importando Toolbar e Item
-import { TextBox } from 'devextreme-react/text-box'; // Importando TextBox
-import { Button } from 'devextreme-react/button'; // Importando Button
-import styles from './style.module.scss'; // Importando o arquivo de estilo SCSS
-import { BiMenu } from 'react-icons/bi'; // Importe o ícone do menu hamburguer
+import { Toolbar, Item } from 'devextreme-react/toolbar';
+import styles from './style.module.scss'; 
+import { BiMenu } from 'react-icons/bi'; 
+import Input from '../Input';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,13 +18,17 @@ const Header = () => {
         <h1 className={styles.siteTitle}>Your Site Title</h1>
         <Toolbar className={styles.toolbar}>
           <Item location="after">
-            <BiSearch className={styles.icon} />
+            <Input 
+              placeholder="Search..."
+              icon="dx-icon-search"
+            />
           </Item>
           <Item location="after">
-            <BiBell className={styles.icon} />
+            <i class={`dx-icon dx-icon-bell ${styles.icon}`}/>
           </Item>
           <Item location="after">
-            <BiUser className={styles.icon} />
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/3715527-imagem-perfil-icone-masculino-icone-humano-ou-pessoa-sinal-e-simbolo-vetor.jpg" 
+              alt="User" className={styles.userIcon}/>
           </Item>
         </Toolbar>
       </div>

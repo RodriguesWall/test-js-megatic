@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { BiMenu } from 'react-icons/bi'; // Importe o ícone do menu hamburguer
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import TreeView from 'devextreme-react/tree-view';
 import Footer from '../Footer';
 import routes from "../../routes/allRouter";
 import styles from './style.module.scss';
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+
+
   const formatTreeViewData = (routes) => {
     return routes.map((route, index) => {
       return {
@@ -57,7 +60,7 @@ const Sidebar = () => {
         onItemClick={(e) => {
           const selectedItem = e.itemData;
           if (selectedItem.link) {
-            return <Link to={selectedItem.link} />;
+            navigate(selectedItem.link); 
           }
         }}
       />

@@ -5,6 +5,7 @@
     color: $primary-color;
     padding: 5px;
     min-height: 7vh;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05), 0 0 4px rgba(0,0,0,.15);
   
     .sidebarHeader {
       display: flex;
@@ -20,6 +21,12 @@
         min-width: 200px;
       }
     }
+
+    .userIcon{
+        cursor: pointer;
+        width: 40px;
+        border-radius: 50%;
+    }
   
     .toolbar {
       display: flex;
@@ -30,6 +37,7 @@
       color: $primary-color;
       font-size: 24px;
       margin-right: 10px;
+      margin-left: 10px;
       cursor: pointer;
     }
 
@@ -39,4 +47,3 @@
         margin-left: 5px;
       }
   }
-  

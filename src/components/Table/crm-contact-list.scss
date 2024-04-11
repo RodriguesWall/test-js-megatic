@@ -1,0 +1,17 @@
+.dx-data-row {
+  td{
+    padding: 10px !important;
+  }
+}
+
+.grid {
+  height: 100%;
+  .dx-toolbar {
+    padding: 20px 0;
+  }
+  .dx-datagrid-content .dx-row {
+    cursor: pointer;
+  }
+
+}
+

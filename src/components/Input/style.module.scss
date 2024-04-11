@@ -1,0 +1,19 @@
+@import '../../global/variables.scss';
+
+.inputContainer {
+ display: flex;
+ background-color: $background-input;
+ align-items: center;
+ border-bottom: 1px solid $border-input;
+
+
+ .icon{
+    margin-left: 10px;
+ }
+
+ .input{
+    flex: 1;
+    border: 0px solid;
+    background-color: $background-input;
+ }
+}

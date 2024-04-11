@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Nome do Projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Inserir uma breve descrição ou visão geral do projeto]
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React:** Uma biblioteca JavaScript para criar interfaces de usuário interativas.
+- **React Router DOM:** Utilizado para navegação entre páginas dentro da aplicação.
+- **DevExtreme:** Fornece componentes de interface de usuário prontos para uso, o que agiliza o desenvolvimento de aplicativos.
+- **Sass:** Um pré-processador CSS que permite escrever estilos mais organizados e reutilizáveis.
+- **Variáveis Globais:** Utilizadas para gerenciar cores e outros estilos globais do sistema de forma eficiente.
+- **Componentização:** O projeto é organizado em componentes reutilizáveis, o que facilita a manutenção e a escalabilidade do código.
+- **Jest:** Utilizado para escrever e executar testes unitários.
 
-### `npm start`
+## Executando o Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Siga os passos abaixo para executar o projeto localmente:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone o repositório:** Use o comando `git clone` para clonar o repositório em sua máquina local:
 
-### `npm test`
+    ```bash
+    git clone https://github.com/RodriguesWall/test-js-megatic.git
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Instale as dependências:** Navegue até o diretório do projeto e execute o seguinte comando para instalar as dependências do projeto:
 
-### `npm run build`
+    ```bash
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Execute a aplicação:** Após a instalação das dependências, execute o seguinte comando para iniciar a aplicação:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Acesse a aplicação:** Abra o navegador e acesse `http://localhost:3000` para visualizar a aplicação em execução.
 
-### `npm run eject`
+## Estrutura do Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A estrutura do projeto é organizada da seguinte forma:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **`src/components/`:** Contém todos os componentes reutilizáveis da aplicação.
+- **`src/routes/`:** Define as rotas da aplicação utilizando o React Router DOM.
+- **`src/global/`:** Contém parametrizações globais do projeto
+- **`src/tests/`:** Contém os testes unitários escritos com Jest.
+- **`src/pages/`:** Contém as paginas do projeto
+- **`src/services/`:** Contém os serviços de conexão com backend
